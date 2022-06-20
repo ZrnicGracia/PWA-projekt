@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Martel:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap" rel="stylesheet">
+
+</head>
+<body>   
+    
+        <header>
+            <img src="slike/lemondelogo.png" class="logo">
+            <hr>
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#">POLITIQUE</a></li>
+                    <li><a href="sport.html">SPORT</a></li>
+                    <li><a href="#">ADMINISTRACIJA</a></li>
+                    <li><a href="unos.html">UNOS</a></li>
+                </ul>
+            </nav>
+        </header>  
+
+    <main>
+        <h2>UNOS VIJESTI</h2>
+        <form action="skripta.php" method="POST">
+            <div class="form-item"> 
+                <label for="title">Naslov vijesti</label>
+                <div class="form-field"> 
+                <input type="text" name="title" class="form-field-textual"> 
+                </div> </div> 
+                <div class="form-item"> 
+                    <label for="about">Kratki sadržaj vijesti (do 50 znakova)</label> 
+                <div class="form-field"> 
+                    <textarea name="about" id="" cols="30" rows="10" class="form-field-textual"></textarea> 
+                </div> </div> 
+                <div class="form-item"> 
+                    <label for="content">Sadržaj vijesti</label> 
+                <div class="form-field"> 
+                    <textarea name="content" id="" cols="30" rows="10" class="form-field-textual"></textarea> 
+                </div> </div> 
+                <div class="form-item"> 
+                    <label for="pphoto">Slika: </label> 
+                <div class="form-field"> 
+                <input type="file" accept="image/jpg,image/gif" class="input-text" name="photo"/> 
+                </div> </div> 
+                <div class="form-item"> <label for="category">Kategorija vijesti</label>
+            <div class="form-field"> 
+                <select name="category" id="" class="form-field-textual"> 
+                    <option value="sport">Sport</option> 
+                    <option value="politika">Politika</option> 
+                </select> </div> </div> <div class="form-item"> 
+                    <label>Prikazati na stranici: <div class="form-field"> 
+                        <input type="checkbox" name="archive"> </div> </label> </div> 
+                        <div class="form-item"> 
+                        <button type="reset" name="Po" value="Poništi">Poništi</button> 
+                        <button type="submit" value="Prihvati">Prihvati</button> </div>
+            </form>
+    </main>
+    <br><br><br>
+    <div class="clear"></div>
+    <footer>
+        <hr id="donja">
+        SUVEZ LE MONDE
+    </footer>
+    </body>
+    </html>
